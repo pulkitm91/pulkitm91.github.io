@@ -7,7 +7,7 @@
 <body>
 	<title> Data Visualisation Project </title>
 	<section>
-		<h1 style="font-size: 300%;text-align: center; margin-bottom: -20px;"> HEADLINE GOES HERE </h1>
+		<h1 style="font-size: 200%;text-align: left; background-color: powderblue; margin-right: 1000"> Data Visualisation Package </h1>
 		<h2 style="text-align: center; font-size: 200%;"> Sub Heading Goes Here </h2>
 	</section>
 </body>	
@@ -176,24 +176,29 @@
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/deal.PNG")
 
 		svg.append("text")
-	        .attr("x", (width / 2))             
-	        .attr("y", 0 - (margin.top / 2))
-	        .attr("text-anchor", "middle")  
-	        .style("font-size", "27px") 
-	        .style("font-family", "calibri") 
-	        .style("text-decoration", "underline")  
+	        .attr("x", -90)             
+	        .attr("y", -10)
+	        .attr("text-anchor", "left")  
+	        .style("font-size", "24px")
+			.style("font-family", "arial")
+	        .style("font-weight", "bold")  
 	        .text("Biggest Private Equity Buyouts in History")
     
 		svg.append("text")
-	        .attr("x", -70)             
-	        .attr("y", 370)
-	        .attr("text-anchor", "right")  
-	        .style("font-size", "12px") 
-	        .style("font-family", "italic") 
+	        .attr("x", -90)             
+	        .attr("y", 370)  
+	        .style("font-size", "12px")
+	        .style("font-family", "calibri	") 
+	        .style("fill", "#8b9e91") 
 		    .text("Source: CNBC, Reuters");
 
 	})
 
 	</script>
+
+<iframe title="Funding Sources for Musk-Twitter Deal " aria-label="Pie Chart" id="datawrapper-chart-4Yaha" src="https://datawrapper.dwcdn.net/4Yaha/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none; margin-top: 50" height="437; font-style: calibri;"></iframe>
+
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
 
 </html>	
