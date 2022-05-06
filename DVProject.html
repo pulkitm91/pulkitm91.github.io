@@ -179,11 +179,18 @@
 	        .attr("x", (width / 2))             
 	        .attr("y", 0 - (margin.top / 2))
 	        .attr("text-anchor", "middle")  
-	        .style("font-size", "25px") 
-	        .style("font-family", "karla") 
+	        .style("font-size", "27px") 
+	        .style("font-family", "calibri") 
 	        .style("text-decoration", "underline")  
-	        .text("Biggest Private Equity Buyouts in History");
+	        .text("Biggest Private Equity Buyouts in History")
     
+		svg.append("text")
+	        .attr("x", -70)             
+	        .attr("y", 370)
+	        .attr("text-anchor", "right")  
+	        .style("font-size", "12px") 
+	        .style("font-family", "italic") 
+		    .text("Source: CNBC, Reuters");
 
 	})
 
