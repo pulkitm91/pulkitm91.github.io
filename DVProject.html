@@ -7,7 +7,7 @@
 <body>
 	<title> Data Visualisation Project </title>
 	<section>
-		<h1 style="font-size: 200%;text-align: left; background-color: powderblue; margin-right: 1000"> Data Visualisation Package </h1>
+		<h1 style="font-size: 200%;text-align: left; background-color: #e8f4f8; width: 28%"> Data Visualisation Package </h1>
 		<hr style="height: 2px;width:100%;text-align:center; margin-top: 2%; background-color: #98a69f;">
 	
 		<h2 style="text-align: center; font-size: 250%;"> Musk to lead Twitter after closing the Largest Buyout in History </h2>
@@ -16,8 +16,9 @@
 
 <div id = "twitter_musk"></div>
 	<script>
-		var margin = {top: 40, right: 30, bottom: 40, left: 90},
-			width = 500 - margin.left - margin.right,
+		var margin = {top: 40, right: 30, bottom: 40, left: 90,},
+			
+			width = 450 - margin.left - margin.right,
 			height = 420 - margin.top - margin.bottom;
 
 		var svg = d3.select("#twitter_musk")
@@ -25,6 +26,7 @@
 					    .attr("width", width + margin.left + margin.right)
 					    .attr("height", height + margin.top + margin.bottom)
 					  .append("g")
+					  	
 					    .attr("transform",
 					          "translate(" + margin.left + "," + margin.top + ")");
 
@@ -173,8 +175,8 @@
 			.append("svg:image")
 			.attr("x", 160)
 			.attr("y", 160)
-		    .attr("width", 300)
-		    .attr("height", 180)
+		    .attr("width", 200)
+		    .attr("height", 150)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/deal.PNG")
 
 		svg.append("text")
@@ -190,7 +192,7 @@
 	        .attr("x", -90)             
 	        .attr("y", 370)  
 	        .style("font-size", "12px")
-	        .style("font-family", "calibri	") 
+	        .style("font-family", "calibri") 
 	        .style("fill", "#8b9e91") 
 		    .text("Source: CNBC, Reuters");
 
@@ -202,8 +204,12 @@
 <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 
-	<style> aside {margin-top: -32%;width: 55%; padding-left: 15px; padding-right: 15px;float: right; background-color: #edfff6;} </style>
-	<aside>
+	<style> aside.a {width: 55%; padding-left: 15px; padding-right: 15px;float: right; background-color: #edfff6;} 
+
+			aside.b {width: 70%; margin: auto;padding-left: 15px; padding-right: 15px; float: inherit; background-color: #edfff6; } 
+
+	</style>
+	<aside class="a">
 		<p1 style="font-size: 18px; text-align: justify;">After announcing the biggest buyout in history, Elon Musk, CEO of Tesla and SpaceX, is set to become Twitter’s interim CEO once the $44 billion takeover deal is closed, according to a Reuters report.<br><br>
 		Musk, the world’s richest man, was revealed to be Twitter’s largest shareholder in an SEC filing on April 4th with a 9.2 per cent stake. A day later the social media giant named Musk to its board to avoid the possibility of a takeover, capping his stake at 14.9 per cent. However, on April 10th, Musk reversed his plans and Parag Agarwal, CEO of Twitter announced the same in a tweet.<br><br>
 		“Elon’s appointment to the board was to become officially effective 4/9, but Elon shared that same morning that he will no longer be joining the board. I believe this is for the best,” said Agarwal, who took over as CEO from Jack Dorsey last year. “We have and always will value input from our shareholders whether they are on Board or not.”<br><br>
@@ -225,13 +231,14 @@
 	</section>
 
 <iframe title="The top ten shorted stocks on the London Stock Exchange 
-" aria-label="Column Chart" id="datawrapper-chart-Nlnuv" src="https://datawrapper.dwcdn.net/Nlnuv/1/" scrolling="no" frameborder="0" style="margin-left: 200; height: 0; min-height: 60%;width: 0; min-width: 65% !important; border: none;" height="601"></iframe>
+" aria-label="Column Chart" id="datawrapper-chart-Nlnuv" src="https://datawrapper.dwcdn.net/Nlnuv/1/" scrolling="no" frameborder="0" style="margin-left: 15%; height: 0; min-height: 60%;width: 0; min-width: 65% !important; border: none;" height="601"></iframe>
 
 <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 
-
-		<p2 style="margin-top: 20%; margin-right: 20px;font-size: 18px; text-align: justify;">
+		<br><br>
+		<aside class="b"> 
+		<p2 style="font-size: 18px; text-align: justify;">
 			
 
 		British cinema company Cineworld continues to be the most shorted stock on the London Stock Exchange for eighth month in a row despite the company enjoying box office success for multiple blockbusters since December 2021. <br><br>
@@ -245,7 +252,7 @@
 		Online fashion retailer, Boohoo, is the second most shorted stock in FTSE with 6.8 per cent of its outstanding shares borrowed to sell. The cost-of-living crisis in the UK has slowed the revenue growth of the company and increased its operating costs.
 
 		</p2>
-
+		</aside>	
 		<hr style="height: 2px;width:100%;text-align:center; margin-top: 2%; background-color: #98a69f;">
 
 </html>	
