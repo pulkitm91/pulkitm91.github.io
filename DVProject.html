@@ -4,27 +4,26 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 
-<body style="background-color: #f0fbfb">
+<body style="background-color: #f8f3f3">
 
 	<title> Data Visualisation Project </title>
 	<section>
-		<h1 style="font-size: 200%;text-align: left; background-color: #e8f4f8; width: 28%"> Data Visualisation Package </h1>
+		<h1 style="font-size: 200%;text-align: left; background-color: #f3f8f8; width: 28%"> Data Visualisation Package </h1>
 		<hr style="height: 2px;width:100%;text-align:center; margin-top: 2%; background-color: #98a69f;">
 	
 		<h2 style="text-align: center; font-size: 250%;"> Musk to lead Twitter after closing the Largest Buyout in History </h2>
-		<p style="text-align: left; margin-left: 9%;"> Pulkit Malhotra</p>
-		<p style="text-align: left; margin-left: 9%; margin-top: -1%;"> 5th May, 2022</p>
+		<p style="text-align: left; margin-left:9%"> Pulkit Malhotra</p>
+		<p style="text-align: left; margin-top: -1%;margin-left:9%"> 5th May, 2022</p>
 	</section>
 </body>	
 
 <div id = "twitter_musk", align="center"></div>
 	<script>
 		var margin = {top: 40, right: 30, bottom: 40, left: 90,},
-			
 			width = 450 - margin.left - margin.right,
 			height = 420 - margin.top - margin.bottom;
 
-		var svg = d3.select("#twitter_musk")
+		var svg1 = d3.select("#twitter_musk")
 					  .append("svg")
 					    .attr("width", width + margin.left + margin.right)
 					    .attr("height", height + margin.top + margin.bottom)
@@ -44,7 +43,7 @@
 		    .domain(data.map(function(d) { return d.Deal; }))
 		    .padding(.15);	
 
-		svg.selectAll("mybar")
+		svg1.selectAll("mybar")
 		    .data(data)
 		    .enter()
 		    .append("rect")
@@ -62,7 +61,7 @@
 			.attr("fill", "#509d8b")
 
 
-		svg.selectAll("text")
+		svg1.selectAll("text")
 			.data(data)
 			.enter()
 			.append("text")
@@ -73,7 +72,7 @@
 			.attr("font-size", "20px")
 			.attr("fill", "#000101")
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -82,7 +81,7 @@
 		    .attr("width", 30)
 		    .attr("height", 40)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/3fe6c258784fdbe5bc10a901ec4c2d5d033121bc/twitter.PNG")	
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -92,7 +91,7 @@
 		    .attr("height", 70)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/TXU.PNG")	
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -102,7 +101,7 @@
 		    .attr("height", 100)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/first%20data.PNG")	
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -112,7 +111,7 @@
 		    .attr("height", 100)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/rjr.PNG")	
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -122,7 +121,7 @@
 		    .attr("height", 100)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/dell.PNG")	
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -132,7 +131,7 @@
 		    .attr("height", 120)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/heinz.PNG")	
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -142,7 +141,7 @@
 		    .attr("height", 140)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/EquityOffice.PNG")	
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -152,7 +151,7 @@
 		    .attr("height", 140)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/HCA.PNG")	
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -162,7 +161,7 @@
 		    .attr("height", 145)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/hilton.PNG")	
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -172,7 +171,7 @@
 		    .attr("height", 145)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/bots.PNG")
 
-		svg.selectAll(".images")
+		svg1.selectAll(".images")
 			.data(data)
 			.enter()
 			.append("svg:image")
@@ -182,7 +181,7 @@
 		    .attr("height", 150)
 		    .attr("xlink:href", "https://raw.githubusercontent.com/pulkitm91/logo_images/main/deal.PNG")
 
-		svg.append("text")
+		svg1.append("text")
 	        .attr("x", -90)             
 	        .attr("y", -10)
 	        .attr("text-anchor", "left")  
@@ -191,7 +190,7 @@
 	        .style("font-weight", "bold")  
 	        .text("Biggest Private Equity Buyouts")
     
-		svg.append("text")
+		svg1.append("text")
 	        .attr("x", -90)             
 	        .attr("y", 370)  
 	        .style("font-size", "12px")
@@ -223,7 +222,7 @@
 		Earlier this week, Musk declared a number of ultra-high net worth investors who will be providing over $7 billion in funding for his Twitter bid, including Oracle’s co-founder Larry Ellison, Sequoia Capital, Binance and Fidelity.<br><br>
 		Binance CEO, Changpen Zhao, who has committed $500 million to Musk-Twitter deal told Financial Times that his crypto exchange would offer unconditional support for the takeover of Twitter.<br><br>
 		“It’s more of a blank cheque,” said Zhao. “We hope to be able to play a role in bringing social media and web3 together and broadening the use and adoption of crypto and blockchain technology.”<br><br>
-		 Other investors include Brookfields Asset Management, tech-investment groups Vy Capital and DFJ Growth Partners and Qatar’s sovereign wealth fund, QIA.<br><br>
+		Other investors include Brookfields Asset Management, tech-investment groups Vy Capital and DFJ Growth Partners and Qatar’s sovereign wealth fund, QIA.<br><br>
 		According to reports, in case Musk fails to close the deal with Twitter, he would have to pay $1 billion in termination fee and also risk being sued by the social media company.<br><br>	
 		</p1>
 	</aside>
@@ -260,5 +259,7 @@
 		</p2>
 		</aside>	
 		<hr style="height: 2px;width:100%;text-align:center; margin-top: 2%; background-color: #98a69f;">
+
+
 
 </html>	
